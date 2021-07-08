@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Get 10</title>
+	    <meta charset="utf-8" />
+	    <meta name="keywords" content="Get 10, Get10, 10, get, ten, game">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="style.css" />
+	    <link rel="icon" type="image/png" href="favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div id="desktop-game-area">
+			<h1 id="title">get <span class="title-number"></span></h1>
+			<div id="players-container">
+				<div id="player-0-player-display" class="player-display">
+					<div id="player-0-score-display" class="score-display"></div>
+					<div id="player-0-key-display" class="key-display"></div>
+				</div>
+				<div id="player-1-player-display" class="player-display">
+					<div id="player-1-score-display" class="score-display"></div>
+					<div id="player-1-key-display" class="key-display"></div>
+				</div>
+				<div id="player-2-player-display" class="player-display">
+					<div id="player-2-score-display" class="score-display"></div>
+					<div id="player-2-key-display" class="key-display"></div>
+				</div>
+				<div id="player-3-player-display" class="player-display">
+					<div id="player-3-score-display" class="score-display"></div>
+					<div id="player-3-key-display" class="key-display"></div>
+				</div>
+			</div>
+			<div id="menu">
+				<div id="play-button" class="menu-item button play-button">play</div>
+				<div id="space-prompt">(spacebar)</div>
+				<div id="lower-menu">
+					<div id="instructions-button" class="menu-item lower-menu-item">how to play</div>
+					<div id="settings-button" class="menu-item lower-menu-item">settings</div>
+				</div>
+			</div>
+			<div id="instructions-window" class="window">	
+				<p>Beat your opponent to <span class="title-number"></span> points by pressing your key.</p>
+				<p>If you press at the same time as your opponent, you both lose all your points.</p>
+				<p>Have fun!</p>
+			</div>
+			<div id="settings-window" class="window">
+				<div id="win-score-configure" class="settings-window-item">win score: 
+					<span id="win-score-input"><input type="text" id="new-win-score" maxlength="3"/></span>
+				</div>
+				<div id="number-players-configure" class="settings-window-item"># players:
+					<span id="number-players-decrease-button" class="button">less</span>
+					<span id="number-players-increase-button" class="button">more</span> 
+				</div>
+				<div id="color-animations-configure" class="settings-window-item">color flashes:
+					<span id="color-animations-on-button" class="button">turn on</span>
+					<span id="color-animations-off-button" class="button">turn off</span>
+				</div>
+				<div id="key-configure" class="settings-window-item">change key:
+					<div id="player-0-key-configure-button" class="key-configure-button button"></div>
+					<div id="player-1-key-configure-button" class="key-configure-button button"></div>
+					<div id="player-2-key-configure-button" class="key-configure-button button"></div>
+					<div id="player-3-key-configure-button" class="key-configure-button button"></div>
+					<div id="key-configure-prompt"></div>
+				</div>
+			</div>
+			<div id="countdown-number" class="countdown-number"></div>
+		</div>
+		<div id="mobile-game-area">
+			<div id="m-menu">
+				<h1 id="m-title">get <span class="title-number"></span></h1>
+				<div id="m-play-button" class="play-button">play</div>
+			</div>
+			<div id="m-player-0" class="m-player-display">
+				<div id="m-player-0-score-display" class="m-score-display"></div>
+				<div id="m-player-0-key-display" class="m-key-display"></div>
+			</div>
+			<div id="m-player-1" class="m-player-display">
+				<div id="m-player-1-score-display" class="m-score-display"></div>
+				<div id="m-player-1-key-display" class="m-key-display"></div>
+			</div>
+			<div id="m-countdown-number" class="countdown-number"></div>
+		</div>
+	</body>
+</html>

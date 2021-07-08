@@ -1,0 +1,149 @@
+/* style.css */
+
+/* media queries */
+@media (pointer: coarse), (pointer: none) {
+	#desktop-game-area { display: none; }
+	#mobile-game-area { display: block; }
+}
+
+@media (pointer: fine) {
+	#desktop-game-area { display: block; }
+	#mobile-game-area { display: none; }
+}
+
+/* desktop */
+body {
+	cursor: default;
+	text-align: center;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+#title {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.score-display { font-size: 3.25rem; }
+
+.key-display {
+	font-size: 40px;
+	height: 60px;
+	line-height: 60px;
+	margin: 10px 40px 50px 40px;
+	transition: transform 0.1s linear;
+	width: 60px;
+}
+
+.button:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#play-button {
+	display: inline-block;
+	font-size: 2.5rem;
+	margin-bottom: 4px;
+	text-decoration-thickness: 2px;
+}
+
+#space-prompt { margin-bottom: 40px; }
+
+.lower-menu-item {
+	display: inline-block;
+	padding-left:  15px;
+	padding-right: 15px;
+}
+
+.window {
+	font-size: 0.9rem;
+	display: inline-block;
+	height: 150px;
+	margin: 0;
+	width: 250px;
+}
+
+.settings-window-item {
+	text-align: left;
+	margin-left: 15%;
+	margin-top: 15px;
+}
+
+#new-win-score {
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: solid;
+	font-size: 0.9rem;
+	width: 25px;
+	z-index: -1;
+}
+
+#new-win-score:focus { outline: 0; }
+
+.key-configure-button {	width: 20px; }
+
+.countdown-number {
+	font-size: 3rem;
+	left: 0;
+	margin-left: auto; 
+  	margin-right: auto;
+	position: absolute;
+  	right: 0; 
+  	top: 100px;
+}
+
+
+/* mobile */
+#m-menu {
+	left: 50%;
+	margin-left: -25%;
+	position: absolute;
+	right: 25%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#m-title {
+	font-size: 10vw;
+	font-weight: 500;
+	margin-top: 0;
+}
+
+#m-play-button {
+	font-size: 6vw;
+}
+
+.m-player-display {
+	position: absolute;
+	right: 10%;
+	width: 80%;
+	margin-left: -40%;
+}
+
+#m-player-0 { bottom: -1%; }
+
+#m-player-1 {
+   top: -1%;
+   transform: rotate(180deg)
+}
+
+.m-key-display {
+	height: 100px;
+	transition: transform .1s;
+	width: 100%;
+}
+
+.m-score-display {
+	font-size: 15vw;
+	margin-bottom: 15%;
+}
+
+#m-countdown-number {
+  	top: 50%;
+	transform: translateY(-50%);
+}
