@@ -268,7 +268,7 @@ function modScore(player) {
 		if (oppt.number != player.number && oppt.active && oppt.down && !oppt.holding) {
 			getPoint = false;
 			oppt.score = startScore;
-			$(oppt.scoreDisplayId).add(oppt.scoreDisplayId).text(oppt.score);
+			$(oppt.scoreDisplayId).add(oppt.mScoreDisplayId).text(oppt.score);
 			if (colorAnimations) { $(oppt.scoreDisplayId).add(oppt.mScoreDisplayId).stop().css('color', lossColor).animate({ color: textColor, }, fadeTime/2); }
 		}
 	});
